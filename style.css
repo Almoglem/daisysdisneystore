@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/wallpaper.jfif');
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: rgb(32, 7, 56);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0px 0px 5px #a7a5ed;
+    color: #3b2c50;
+}
+
+button {
+    background-color: #97418bc7;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+button:hover, .sorter:hover{
+    cursor: pointer;
+}
+
+.add-book {
+    margin-bottom: 1rem;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+
+table, .book-details {
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 5px rgba(61, 27, 68, 0.74);
+}
+
+table{
+    background-color: #6264c9e5;
+}
+
+th, td {
+    height: 30px;
+    width: 170px;
+}
+
+
+/* view details about book modal */
+
+.book-details{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 13rem;
+    padding: 3%;
+    background-color: #6b84d0;
+}
+
+.close {
+position: absolute;
+right: 1rem;
+top: 0.5rem;
+font-size: large;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.desc-img {
+    height: 7rem;
+    width: auto;
+}
+
+.book-title{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}

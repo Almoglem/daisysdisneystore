@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Bookshop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="onInit()">
+
+    <h1>Daisy's Disney Bookshop</h1>
+    <div class="add-book"><button onclick="onAddBook()">Add Book</button></div>
+    <div class="table-container">
+        <table class="books-table">
+            <thead>
+                <tr>
+                    <th class="sorter" onclick="onSortBy('id')">Id</th>
+                    <th class="sorter" onclick="onSortBy('title')">Title</th>
+                    <th class="sorter price" onclick="onSortBy('price')">Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="books-tbody"></tbody>
+        </table>
+    </div>
+    <div class="book-details hidden"><span class="close" onclick="onCloseModal()"> x </span></div>
+
+    <script src="js/services/utils.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/book-service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
+
+<img src="" alt="">
